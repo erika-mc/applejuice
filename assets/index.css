@@ -1,0 +1,165 @@
+/*This CSS file is organized by the order in which they come up on the website.
+Elements or features that occur in multiple sections will be placed toward the top,
+even if they don't start until later in the website.*/
+
+html {
+  background-color: rgb(225, 238, 250);
+  font-family: 'Barlow', Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/*Recurring elements*/
+
+h2 {
+  font-family: 'Changa One', cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+section {
+  padding-bottom: 50px;
+}
+
+/*Navigation Area (Logo, nav bar, social media icons)*/
+
+.topbar {
+  display: flex;
+}
+
+.logo {
+  height: 150px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav > ul {
+  transform: translateY(100%);
+  padding-left: 10%;
+  padding-right: 15%;;
+  list-style-type: none;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul > li {
+  padding: 15px;
+}
+
+nav > ul > li:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  width: 200px;
+  transform: translateY(70%);
+  margin-left: 50px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  width: 100%;
+}
+
+/*Store*/
+
+.store {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.button {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+}
+
+.button > button {
+  width: 120px;
+  height: 50px;
+  background-color: rgb(17, 17, 60);
+  color: white;
+  border: none;
+  font-size: 1.5em;
+}
+
+.button > button:hover {
+  background-color: rgb(37, 99, 170);
+}
+
+/*Tour*/
+
+.tour {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(5,100px);
+}
+
+.location {
+  justify-self: center;
+  align-self: center;
+}
+
+.tickets {
+  width: 100px;
+  height: 35px;
+  justify-self: end;
+  align-self: center;
+  background-color: rgb(17, 17, 60);
+  color: white;
+  border: none;
+  font-size: 1em;
+}
+
+.tickets:hover {
+  background-color: rgb(37, 99, 170);
+}
+
+/*Video*/
+
+.video {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+/*Footer*/
+
+footer {
+  height: 250px;
+  background-color: rgb(52, 52, 52);
+  color: white;
+  display: grid;
+  grid-template-rows: repeat (2, 125px);
+}
+
+.email {
+  font-size: 1.5em;
+  justify-self: center;
+  align-self: center;
+}
+
+footer > .icons {
+  justify-self: center;
+  align-self: center;
+}
